@@ -1,4 +1,4 @@
-%.o: %.c
+%.o: %.cpp
 	g++ -std=c++17 -g -c $^
 
 all: My_random.o Tree.o

@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 
     Tree=(BT*)malloc(sizeof(BT));
 
-    init(Tree,Tree->degree,true,true);
+    init(Tree,DEFAULT_DEGREE,true,true);
 
 #ifdef DEBUG1
 

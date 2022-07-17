@@ -104,7 +104,7 @@ void insert(int a,BT *b,BT **t){
 
     index=it_i-b->keylist.begin();
 
-    if(b->isleaf==0){
+    if(!b->isleaf){
 
         insert(a,b->childlist[index],t);
 
@@ -114,7 +114,7 @@ void insert(int a,BT *b,BT **t){
 
         b->keylist.insert(b->keylist.begin()+index,a);
 
-        if(b->keylist.size()>=b->degree*2-1){
+        if(b->keylist.size() >= b->degree*2-1){
 
             split_child(b,t);
 
