@@ -14,9 +14,9 @@ int main(int argc, char* argv[]) {
     int i;
     int *random_list;
 
-    Tree=malloc(sizeof(BT));
+    Tree=(BT*)malloc(sizeof(BT));
 
-    init(Tree,degree,t,f);
+    init(Tree,Tree->degree,true,true);
 
 #ifdef DEBUG1
 
@@ -76,47 +76,47 @@ int main(int argc, char* argv[]) {
 
         insert(random_list[i],Tree,&Tree);
         check_valid(Tree,1);
-    //    traversal(Tree);
-    //    printf("=================\n");
+        traversal(Tree);
+        printf("=================\n");
 
     }
 
     //traversal(Tree);
 
-#ifdef DEBUG1
+// #ifdef DEBUG1
 
-    delete_node(5, Tree, &Tree);    
-    check_valid(Tree,1);
-    traversal(Tree);
-    printf("=================\n");
-    delete_node(6, Tree, &Tree);    
-    check_valid(Tree,1);
-    traversal(Tree);
-    printf("=================\n");
-    delete_node(7, Tree, &Tree);   
-    check_valid(Tree,1);
-    traversal(Tree);
-    printf("=================\n"); 
-    delete_node(8, Tree, &Tree);
-    check_valid(Tree,1);
-    traversal(Tree);
-    printf("=================\n");  
-    delete_node(9, Tree, &Tree);
-    check_valid(Tree,1);
-    traversal(Tree);
-    printf("=================\n");    
+//     delete_node(5, Tree, &Tree);    
+//     check_valid(Tree,1);
+//     traversal(Tree);
+//     printf("=================\n");
+//     delete_node(6, Tree, &Tree);    
+//     check_valid(Tree,1);
+//     traversal(Tree);
+//     printf("=================\n");
+//     delete_node(7, Tree, &Tree);   
+//     check_valid(Tree,1);
+//     traversal(Tree);
+//     printf("=================\n"); 
+//     delete_node(8, Tree, &Tree);
+//     check_valid(Tree,1);
+//     traversal(Tree);
+//     printf("=================\n");  
+//     delete_node(9, Tree, &Tree);
+//     check_valid(Tree,1);
+//     traversal(Tree);
+//     printf("=================\n");    
 
-#elif defined DEBUG2
+// #elif defined DEBUG2
 
-    for(i=0;i<true_length;i++){
+    // for(i=0;i<true_length;i++){
 
-        delete_node(random_list[i],Tree,&Tree);
-        check_valid(Tree,1);
-            traversal(Tree);
-    printf("=================\n");    
+    //     delete_node(random_list[i],Tree,&Tree);
+    //     check_valid(Tree,1);
+    //         traversal(Tree);
+    // printf("=================\n");    
 
-    }
+    // }
 
-#endif
+// #endif
 
 }

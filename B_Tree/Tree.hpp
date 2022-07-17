@@ -3,13 +3,15 @@
 #include <time.h>
 #include <vector>
 
+using namespace std;
+
 typedef struct Btree{
 
     vector <int> keylist;
     int degree;
     bool isroot;
     bool isleaf;
-    vector <*struct Btree> childlist;
+    vector <struct Btree*> childlist;
     struct Btree *parent;
     int PCrelation;
     int traversal_id;
@@ -27,3 +29,7 @@ void print_node(BT *t);
 void check_valid(BT *t, int isroot);
 
 void _check_valid(BT *t,int isroot,int *black_hight,int );
+
+void split_child(BT* t, BT** root);
+
+void init(BT *b, int degree,bool isroot,bool isleaf);
