@@ -85,12 +85,6 @@ void print_node(BT *t){
 
 }
 
-void check(BT *b,BT **t){
-
-
-
-}
-
 void insert(int a,BT *b,BT **t){
 
     int index;
@@ -254,6 +248,7 @@ void check_valid(BT *root){
     vector<pair<BT*,int>> stack;
     BT* now_node;
     int i;
+    int need_leaf,need_root;
 
     stack.push_back(make_pair(root,0));
 
@@ -267,9 +262,9 @@ void check_valid(BT *root){
 
             stack[stack.size()-1].second=1;
 
-            for(i=0;i<now_node->childlist.size(),i++){
+            for(i=0;i<now_node->childlist.size();i++){
             
-                stack.push_back(now_node->childlist[now_node->childlist.size()-1-i]);
+                stack.push_back(make_pair(now_node->childlist[now_node->childlist.size()-1-i],0));
 
             }
 
@@ -339,7 +334,7 @@ void check_valid_2(BT *now_node, bool need_root, bool need_leaf){
 
         if(i==0){
 
-            if(now_node->childlist[i]->keylist[keylist.size()-1]>now_node->keylist[i]){
+            if(now_node->childlist[i]->keylist[now_node->childlist[i]->keylist.size()-1]>now_node->keylist[i]){
 
                 printf("head childlist value error\n");
 
@@ -359,7 +354,7 @@ void check_valid_2(BT *now_node, bool need_root, bool need_leaf){
         }
 
         if(now_node->childlist[i]->keylist[0]<now_node->keylist[i-1]&&
-            now_node->childlist[i]->keylist[keylist.size()-1]>now_node->keylist[i]){
+            now_node->childlist[i]->keylist[now_node->childlist[i]->keylist.size()-1]>now_node->keylist[i]){
 
                 printf("middle childlist value error\n");
 
@@ -368,5 +363,3 @@ void check_valid_2(BT *now_node, bool need_root, bool need_leaf){
     }
 
 }
-
-void delete_node()

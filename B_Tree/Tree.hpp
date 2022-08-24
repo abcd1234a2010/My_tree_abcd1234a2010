@@ -15,6 +15,7 @@ typedef struct Btree{
     struct Btree *parent;
     int PCrelation;
     int traversal_id;
+    int traversal_high;
 
 }BT;
 
@@ -26,9 +27,9 @@ void traversal(BT *t);
 
 void print_node(BT *t);
 
-void check_valid(BT *t, int isroot);
+void check_valid(BT *root);
 
-void _check_valid(BT *t,int isroot,int *black_hight,int );
+void check_valid_2(BT *now_node, bool need_root, bool need_leaf);
 
 void split_child(BT* t, BT** root);
 

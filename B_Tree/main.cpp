@@ -83,7 +83,7 @@ int main(int argc, char* argv[]) {
     for(i=0;i<true_length;i++){
 
         insert(random_list[i],Tree,&Tree);
-        check_valid(Tree,1);
+        check_valid(Tree);
         traversal(Tree);
         printf("=================\n");
 
