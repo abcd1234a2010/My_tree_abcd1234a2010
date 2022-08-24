@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 
 #ifdef DEBUG1
 
-    int tmp[10]={1,5,2,8,9,7,6,3,4,10};
+    int tmp[10]={156,112,13,157,13,183,46,22,197,120};
     int true_length=length;
     random_list=(int*)malloc(length*sizeof(int));
     for(int i=0;i<length;i++){
@@ -71,6 +71,14 @@ int main(int argc, char* argv[]) {
     int true_length = random_list_gen(&random_list,  length, 0, 200);
 
 #endif
+
+    for(i=0;i<true_length;i++){
+
+        printf("%d ",random_list[i]);
+
+    }
+    
+    printf("\n");
 
     for(i=0;i<true_length;i++){
 

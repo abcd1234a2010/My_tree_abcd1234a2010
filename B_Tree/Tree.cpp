@@ -21,8 +21,6 @@ void traversal(BT *t){
         BT* head=q.front();
         q.pop();
 
-        print_node(head);
-
         for(i=0;i<head->childlist.size();i++){
 
             q.push(head->childlist[i]);
@@ -30,6 +28,8 @@ void traversal(BT *t){
             j++;           
 
         }
+
+        print_node(head);
 
     }
 
@@ -61,15 +61,19 @@ void print_node(BT *t){
 
     }
 
-    printf("%d %d %d %d\n",t->traversal_id,t->isroot,t->isleaf,parent_id);
+    printf("traversal_id=%d isroot=%d isleaf=%d parent_id=%d\n",t->traversal_id,t->isroot,t->isleaf,parent_id);
 
-    for(i=0;i<=t->keylist.size();i++){
+    printf("keylist ");
+
+    for(i=0;i<t->keylist.size();i++){
 
         printf("%d ",t->keylist[i]);
 
     }
 
     printf("\n");
+
+    printf("childlist_traversal_id ");
 
     for(i=0;i<t->childlist.size();i++){
 
@@ -109,7 +113,7 @@ void insert(int a,BT *b,BT **t){
         insert(a,b->childlist[index],t);
 
     }
-
+    
     else{
 
         b->keylist.insert(b->keylist.begin()+index,a);
@@ -132,6 +136,7 @@ void split_child(BT* t, BT** root){
         int i,j;
 
         t->parent=(BT*)malloc(sizeof(BT));
+        *root=t->parent;
         init(t->parent,t->degree,1,0);
         t->parent->keylist.push_back(t->keylist[t->degree-1]);
         t->parent->childlist.push_back(t);
@@ -143,7 +148,7 @@ void split_child(BT* t, BT** root){
         right->PCrelation=1;
         right->parent=t->parent;
 
-        for(i=t->degree;i<=t->degree*2-1;i++){
+        for(i=t->degree;i<t->degree*2-1;i++){
 
             right->keylist.push_back(t->keylist[i]);
 
@@ -165,6 +170,9 @@ void split_child(BT* t, BT** root){
 
         }
 
+        t->parent->isroot=1;
+        t->isroot=0;
+
     }
 
    else{
@@ -172,11 +180,33 @@ void split_child(BT* t, BT** root){
         BT* right;
         int i,j;
 
-        t->parent->keylist.insert(t->keylist.begin()+t->PCrelation-1,t->keylist[t->degree-1]);
+        if(t->PCrelation==t->parent->keylist.size()){
+
+            t->parent->keylist.push_back(t->keylist[t->degree-1]);
         
+        }
+
+        else{
+
+            t->parent->keylist.insert(t->parent->keylist.begin()+t->PCrelation,t->keylist[t->degree-1]);
+            
+        }
+
         right=(BT*)malloc(sizeof(BT));
         init(right,t->degree,0,t->isleaf);
-        t->parent->childlist.insert(t->parent->childlist.begin()+t->PCrelation+1,right);
+
+        if(t->PCrelation+1==t->parent->childlist.size()){
+
+            t->parent->childlist.push_back(right);
+
+        }
+
+        else{
+
+            t->parent->childlist.insert(t->parent->childlist.begin()+t->PCrelation+1,right);
+        
+        }
+        
         right->PCrelation=t->PCrelation+1;
         right->parent=t->parent;
 
@@ -194,6 +224,15 @@ void split_child(BT* t, BT** root){
 
         }
 
+        for(i=t->degree,j=0;i<=t->degree*2-1;i++,j++){
+
+            right->keylist.push_back(t->keylist[i]);
+
+        }
+
+        t->keylist.resize(t->degree-1);
+        right->keylist.resize(t->degree-1);
+
         for(i=right->PCrelation+1;i<=t->childlist.size();i++){
 
             t->parent->childlist[i]->PCrelation=i;
@@ -202,14 +241,132 @@ void split_child(BT* t, BT** root){
 
     }
 
-}
+    if(t->parent->keylist.size()==t->degree*2-1){
 
-void check_valid(BT *t, int isroot){
+        split_child(t->parent,root);
 
-
-}
-
-void _check_valid(BT *t, int isroot,int *black_hight,int black_count){
-
+    }
 
 }
+
+void check_valid(BT *root){
+
+    vector<pair<BT*,int>> stack;
+    BT* now_node;
+    int i;
+
+    stack.push_back(make_pair(root,0));
+
+    while(stack.size()!=0){
+
+        pair<BT*,int> now_item=stack.back();
+        now_node=now_item.first;
+        int now_flag=now_item.second;
+
+        if(now_node->childlist.size()!=0&&now_flag==0){
+
+            stack[stack.size()-1].second=1;
+
+            for(i=0;i<now_node->childlist.size(),i++){
+            
+                stack.push_back(now_node->childlist[now_node->childlist.size()-1-i]);
+
+            }
+
+            continue;
+
+        }
+
+        else{
+
+            stack.pop_back();
+            
+            need_root=stack.size()==0;
+            need_leaf=now_node->childlist.size()==0;
+
+            check_valid_2(now_node,need_root,need_leaf);
+
+        }
+
+    }
+
+}
+
+void check_valid_2(BT *now_node, bool need_root, bool need_leaf){
+
+    int i;
+
+    if(now_node->isroot!=need_root){
+
+        printf("isroot error\n");
+
+    }
+
+    if(now_node->isleaf!=need_leaf){
+
+        printf("isleaf error\n");
+
+    }
+
+    if(now_node->isleaf==0&&now_node->keylist.size()+1!=now_node->childlist.size()){
+
+        printf("keylist or childlist error\n");
+
+    }
+
+    for(i=0;i<now_node->childlist.size();i++){
+
+        if(now_node->childlist[i]->PCrelation!=i){
+
+            printf("PCrelation error when index = %d and PCrelation = %d\n",i,now_node->childlist[i]->PCrelation);
+
+        }
+
+    }
+
+    for(i=0;i<now_node->keylist.size()-1;i++){
+
+        if(now_node->keylist[i]>now_node->keylist[i+1]){
+
+            printf("keylist sort error\n");
+
+        }
+
+    }
+
+
+    for(i=0;i<now_node->childlist.size();i++){
+
+        if(i==0){
+
+            if(now_node->childlist[i]->keylist[keylist.size()-1]>now_node->keylist[i]){
+
+                printf("head childlist value error\n");
+
+            }
+        
+        }
+
+
+        if(i==now_node->childlist.size()-1){
+
+            if(now_node->childlist[i]->keylist[0]<now_node->keylist[i-1]){
+
+                printf("tail childlist value error\n");
+
+            }
+        
+        }
+
+        if(now_node->childlist[i]->keylist[0]<now_node->keylist[i-1]&&
+            now_node->childlist[i]->keylist[keylist.size()-1]>now_node->keylist[i]){
+
+                printf("middle childlist value error\n");
+
+        }
+    
+    }
+
+}
+
+void delete_node()
