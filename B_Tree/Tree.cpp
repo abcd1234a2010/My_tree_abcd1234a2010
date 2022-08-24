@@ -61,7 +61,8 @@ void print_node(BT *t){
 
     }
 
-    printf("traversal_id=%d isroot=%d isleaf=%d parent_id=%d\n",t->traversal_id,t->isroot,t->isleaf,parent_id);
+    printf("traversal_id=%d isroot=%d isleaf=%d parent_id=%d PCrelation=%d\n",
+        t->traversal_id,t->isroot,t->isleaf,parent_id,t->PCrelation);
 
     printf("keylist ");
 
@@ -198,6 +199,12 @@ void split_child(BT* t, BT** root){
         else{
 
             t->parent->childlist.insert(t->parent->childlist.begin()+t->PCrelation+1,right);
+
+            for(i=t->PCrelation+2;i<t->parent->childlist.size();i++){
+
+                t->parent->childlist[i]->PCrelation=i;
+
+            }
         
         }
         
