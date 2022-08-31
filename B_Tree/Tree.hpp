@@ -34,3 +34,10 @@ void check_valid_2(BT *now_node, bool need_root, bool need_leaf);
 void split_child(BT* t, BT** root);
 
 void init(BT *b, int degree,bool isroot,bool isleaf);
+
+void handle_short(BT *b,BT **t);
+
+void borrow(BT* from,BT* to,BT** t);
+
+void merge(BT* left,BT* right,BT** t);
+

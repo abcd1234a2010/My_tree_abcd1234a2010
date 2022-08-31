@@ -1,0 +1,1452 @@
+In file included from Tree.cpp:4:
+Tree.hpp:40:1: error: expected initializer before ‘void’
+   40 | void borrow(BT* from,BT* to,BT** t)
+      | ^~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6149:41: error: wrong number of template arguments (1, should be 3)
+ 6149 |     operator==(const basic_string<_CharT>& __lhs,
+      |                                         ^
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6150:34: error: wrong number of template arguments (1, should be 3)
+ 6150 |         const basic_string<_CharT>& __rhs) _GLIBCXX_NOEXCEPT
+      |                                  ^
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6149:5: error: ‘typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const int&, const int&)’ must have an argument of class or enumerated type
+ 6149 |     operator==(const basic_string<_CharT>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6403:60: error: wrong number of template arguments (1, should be 3)
+ 6403 |     operator>>(basic_istream<char>& __is, basic_string<char>& __str);
+      |                                                            ^
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6403:5: error: template-id ‘operator>><>’ for ‘std::basic_istream<char>& std::operator>>(std::basic_istream<char>&, int&)’ does not match any template declaration
+ 6403 |     operator>>(basic_istream<char>& __is, basic_string<char>& __str);
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6398:5: note: candidate is: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6398 |     operator>>(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6478:57: error: wrong number of template arguments (1, should be 3)
+ 6478 |     getline(basic_istream<char>& __in, basic_string<char>& __str,
+      |                                                         ^
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6478:5: error: template-id ‘getline<>’ for ‘std::basic_istream<char>& std::getline(std::basic_istream<char>&, int&, char)’ does not match any template declaration
+ 6478 |     getline(basic_istream<char>& __in, basic_string<char>& __str,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6471:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6471 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6464:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6464 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6456:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6456 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6439:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6439 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6484:63: error: wrong number of template arguments (1, should be 3)
+ 6484 |     getline(basic_istream<wchar_t>& __in, basic_string<wchar_t>& __str,
+      |                                                               ^
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6484:5: error: template-id ‘getline<>’ for ‘std::basic_istream<wchar_t>& std::getline(std::basic_istream<wchar_t>&, int&, wchar_t)’ does not match any template declaration
+ 6484 |     getline(basic_istream<wchar_t>& __in, basic_string<wchar_t>& __str,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6471:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6471 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6464:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6464 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6456:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6456 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6439:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6439 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6503:14: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6503 |   stoi(const string& __str, size_t* __idx = 0, int __base = 10)
+      |              ^~~~~~
+      |              stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘int std::__cxx11::stoi(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6504:69: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6504 |   { return __gnu_cxx::__stoa<long, int>(&std::strtol, "stoi", __str.c_str(),
+      |                                                                     ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6508:14: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6508 |   stol(const string& __str, size_t* __idx = 0, int __base = 10)
+      |              ^~~~~~
+      |              stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘long int std::__cxx11::stol(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6509:58: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6509 |   { return __gnu_cxx::__stoa(&std::strtol, "stol", __str.c_str(),
+      |                                                          ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6513:15: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6513 |   stoul(const string& __str, size_t* __idx = 0, int __base = 10)
+      |               ^~~~~~
+      |               stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘long unsigned int std::__cxx11::stoul(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6514:60: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6514 |   { return __gnu_cxx::__stoa(&std::strtoul, "stoul", __str.c_str(),
+      |                                                            ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6518:15: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6518 |   stoll(const string& __str, size_t* __idx = 0, int __base = 10)
+      |               ^~~~~~
+      |               stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘long long int std::__cxx11::stoll(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6519:60: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6519 |   { return __gnu_cxx::__stoa(&std::strtoll, "stoll", __str.c_str(),
+      |                                                            ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6523:16: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6523 |   stoull(const string& __str, size_t* __idx = 0, int __base = 10)
+      |                ^~~~~~
+      |                stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘long long unsigned int std::__cxx11::stoull(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6524:62: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6524 |   { return __gnu_cxx::__stoa(&std::strtoull, "stoull", __str.c_str(),
+      |                                                              ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6529:14: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6529 |   stof(const string& __str, size_t* __idx = 0)
+      |              ^~~~~~
+      |              stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘float std::__cxx11::stof(const int&, std::size_t*)’:
+/usr/include/c++/9/bits/basic_string.h:6530:58: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6530 |   { return __gnu_cxx::__stoa(&std::strtof, "stof", __str.c_str(), __idx); }
+      |                                                          ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6533:14: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6533 |   stod(const string& __str, size_t* __idx = 0)
+      |              ^~~~~~
+      |              stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘double std::__cxx11::stod(const int&, std::size_t*)’:
+/usr/include/c++/9/bits/basic_string.h:6534:58: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6534 |   { return __gnu_cxx::__stoa(&std::strtod, "stod", __str.c_str(), __idx); }
+      |                                                          ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6537:15: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6537 |   stold(const string& __str, size_t* __idx = 0)
+      |               ^~~~~~
+      |               stdin
+/usr/include/c++/9/bits/basic_string.h: In function ‘long double std::__cxx11::stold(const int&, std::size_t*)’:
+/usr/include/c++/9/bits/basic_string.h:6538:60: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6538 |   { return __gnu_cxx::__stoa(&std::strtold, "stold", __str.c_str(), __idx); }
+      |                                                            ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6545:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6545 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6550:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6550 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6556:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6556 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6561:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6561 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6567:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6567 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6573:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6573 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6579:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6579 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6588:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6588 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6597:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 6597 |   inline string
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/basic_string.h:6609:14: error: ‘wstring’ does not name a type
+ 6609 |   stoi(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |              ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6609:3: error: redefinition of ‘int std::__cxx11::stoi(const int&, std::size_t*, int)’
+ 6609 |   stoi(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h:6503:3: note: ‘int std::__cxx11::stoi(const int&, std::size_t*, int)’ previously defined here
+ 6503 |   stoi(const string& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘int std::__cxx11::stoi(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6610:69: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6610 |   { return __gnu_cxx::__stoa<long, int>(&std::wcstol, "stoi", __str.c_str(),
+      |                                                                     ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6614:14: error: ‘wstring’ does not name a type
+ 6614 |   stol(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |              ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6614:3: error: redefinition of ‘long int std::__cxx11::stol(const int&, std::size_t*, int)’
+ 6614 |   stol(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h:6508:3: note: ‘long int std::__cxx11::stol(const int&, std::size_t*, int)’ previously defined here
+ 6508 |   stol(const string& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘long int std::__cxx11::stol(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6615:58: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6615 |   { return __gnu_cxx::__stoa(&std::wcstol, "stol", __str.c_str(),
+      |                                                          ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6619:15: error: ‘wstring’ does not name a type
+ 6619 |   stoul(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |               ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6619:3: error: redefinition of ‘long unsigned int std::__cxx11::stoul(const int&, std::size_t*, int)’
+ 6619 |   stoul(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~~
+/usr/include/c++/9/bits/basic_string.h:6513:3: note: ‘long unsigned int std::__cxx11::stoul(const int&, std::size_t*, int)’ previously defined here
+ 6513 |   stoul(const string& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘long unsigned int std::__cxx11::stoul(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6620:60: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6620 |   { return __gnu_cxx::__stoa(&std::wcstoul, "stoul", __str.c_str(),
+      |                                                            ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6624:15: error: ‘wstring’ does not name a type
+ 6624 |   stoll(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |               ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6624:3: error: redefinition of ‘long long int std::__cxx11::stoll(const int&, std::size_t*, int)’
+ 6624 |   stoll(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~~
+/usr/include/c++/9/bits/basic_string.h:6518:3: note: ‘long long int std::__cxx11::stoll(const int&, std::size_t*, int)’ previously defined here
+ 6518 |   stoll(const string& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘long long int std::__cxx11::stoll(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6625:60: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6625 |   { return __gnu_cxx::__stoa(&std::wcstoll, "stoll", __str.c_str(),
+      |                                                            ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6629:16: error: ‘wstring’ does not name a type
+ 6629 |   stoull(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |                ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6629:3: error: redefinition of ‘long long unsigned int std::__cxx11::stoull(const int&, std::size_t*, int)’
+ 6629 |   stoull(const wstring& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~~~
+/usr/include/c++/9/bits/basic_string.h:6523:3: note: ‘long long unsigned int std::__cxx11::stoull(const int&, std::size_t*, int)’ previously defined here
+ 6523 |   stoull(const string& __str, size_t* __idx = 0, int __base = 10)
+      |   ^~~~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘long long unsigned int std::__cxx11::stoull(const int&, std::size_t*, int)’:
+/usr/include/c++/9/bits/basic_string.h:6630:62: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6630 |   { return __gnu_cxx::__stoa(&std::wcstoull, "stoull", __str.c_str(),
+      |                                                              ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6635:14: error: ‘wstring’ does not name a type
+ 6635 |   stof(const wstring& __str, size_t* __idx = 0)
+      |              ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6635:3: error: redefinition of ‘float std::__cxx11::stof(const int&, std::size_t*)’
+ 6635 |   stof(const wstring& __str, size_t* __idx = 0)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h:6529:3: note: ‘float std::__cxx11::stof(const int&, std::size_t*)’ previously defined here
+ 6529 |   stof(const string& __str, size_t* __idx = 0)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘float std::__cxx11::stof(const int&, std::size_t*)’:
+/usr/include/c++/9/bits/basic_string.h:6636:58: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6636 |   { return __gnu_cxx::__stoa(&std::wcstof, "stof", __str.c_str(), __idx); }
+      |                                                          ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6639:14: error: ‘wstring’ does not name a type
+ 6639 |   stod(const wstring& __str, size_t* __idx = 0)
+      |              ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6639:3: error: redefinition of ‘double std::__cxx11::stod(const int&, std::size_t*)’
+ 6639 |   stod(const wstring& __str, size_t* __idx = 0)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h:6533:3: note: ‘double std::__cxx11::stod(const int&, std::size_t*)’ previously defined here
+ 6533 |   stod(const string& __str, size_t* __idx = 0)
+      |   ^~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘double std::__cxx11::stod(const int&, std::size_t*)’:
+/usr/include/c++/9/bits/basic_string.h:6640:58: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6640 |   { return __gnu_cxx::__stoa(&std::wcstod, "stod", __str.c_str(), __idx); }
+      |                                                          ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6643:15: error: ‘wstring’ does not name a type
+ 6643 |   stold(const wstring& __str, size_t* __idx = 0)
+      |               ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6643:3: error: redefinition of ‘long double std::__cxx11::stold(const int&, std::size_t*)’
+ 6643 |   stold(const wstring& __str, size_t* __idx = 0)
+      |   ^~~~~
+/usr/include/c++/9/bits/basic_string.h:6537:3: note: ‘long double std::__cxx11::stold(const int&, std::size_t*)’ previously defined here
+ 6537 |   stold(const string& __str, size_t* __idx = 0)
+      |   ^~~~~
+/usr/include/c++/9/bits/basic_string.h: In function ‘long double std::__cxx11::stold(const int&, std::size_t*)’:
+/usr/include/c++/9/bits/basic_string.h:6644:60: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const int’
+ 6644 |   { return __gnu_cxx::__stoa(&std::wcstold, "stold", __str.c_str(), __idx); }
+      |                                                            ^~~~~
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6648:10: error: ‘wstring’ does not name a type
+ 6648 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6653:10: error: ‘wstring’ does not name a type
+ 6653 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6659:10: error: ‘wstring’ does not name a type
+ 6659 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6664:10: error: ‘wstring’ does not name a type
+ 6664 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6670:10: error: ‘wstring’ does not name a type
+ 6670 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6676:10: error: ‘wstring’ does not name a type
+ 6676 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6682:10: error: ‘wstring’ does not name a type
+ 6682 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6691:10: error: ‘wstring’ does not name a type
+ 6691 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6700:10: error: ‘wstring’ does not name a type
+ 6700 |   inline wstring
+      |          ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6730:17: error: ‘string’ was not declared in this scope
+ 6730 |     struct hash<string>
+      |                 ^~~~~~
+/usr/include/c++/9/bits/basic_string.h:6494:1: note: ‘std::string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+ 6493 | #include <ext/string_conversions.h>
+  +++ |+#include <string>
+ 6494 | 
+/usr/include/c++/9/bits/basic_string.h:6730:23: error: template argument 1 is invalid
+ 6730 |     struct hash<string>
+      |                       ^
+/usr/include/c++/9/bits/basic_string.h:6731:34: error: ‘string’ was not declared in this scope
+ 6731 |     : public __hash_base<size_t, string>
+      |                                  ^~~~~~
+/usr/include/c++/9/bits/basic_string.h:6731:34: note: ‘std::string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6731:40: error: template argument 2 is invalid
+ 6731 |     : public __hash_base<size_t, string>
+      |                                        ^
+/usr/include/c++/9/bits/basic_string.h:6739:32: error: ‘string’ was not declared in this scope
+ 6739 |     struct __is_fast_hash<hash<string>> : std::false_type
+      |                                ^~~~~~
+/usr/include/c++/9/bits/basic_string.h:6739:32: note: ‘std::string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6739:32: error: template argument 1 is invalid
+/usr/include/c++/9/bits/basic_string.h:6739:38: error: template argument 1 is invalid
+ 6739 |     struct __is_fast_hash<hash<string>> : std::false_type
+      |                                      ^~
+/usr/include/c++/9/bits/basic_string.h:6745:17: error: ‘wstring’ was not declared in this scope
+ 6745 |     struct hash<wstring>
+      |                 ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6745:17: note: ‘std::wstring’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6745:24: error: template argument 1 is invalid
+ 6745 |     struct hash<wstring>
+      |                        ^
+/usr/include/c++/9/bits/basic_string.h:6746:34: error: ‘wstring’ was not declared in this scope
+ 6746 |     : public __hash_base<size_t, wstring>
+      |                                  ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6746:34: note: ‘std::wstring’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6746:41: error: template argument 2 is invalid
+ 6746 |     : public __hash_base<size_t, wstring>
+      |                                         ^
+/usr/include/c++/9/bits/basic_string.h:6755:32: error: ‘wstring’ was not declared in this scope
+ 6755 |     struct __is_fast_hash<hash<wstring>> : std::false_type
+      |                                ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6755:32: note: ‘std::wstring’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6755:32: error: template argument 1 is invalid
+/usr/include/c++/9/bits/basic_string.h:6755:39: error: template argument 1 is invalid
+ 6755 |     struct __is_fast_hash<hash<wstring>> : std::false_type
+      |                                       ^~
+/usr/include/c++/9/bits/basic_string.h:6779:17: error: ‘u16string’ was not declared in this scope
+ 6779 |     struct hash<u16string>
+      |                 ^~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6779:17: note: ‘std::u16string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6779:26: error: template argument 1 is invalid
+ 6779 |     struct hash<u16string>
+      |                          ^
+/usr/include/c++/9/bits/basic_string.h:6780:34: error: ‘u16string’ was not declared in this scope
+ 6780 |     : public __hash_base<size_t, u16string>
+      |                                  ^~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6780:34: note: ‘std::u16string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6780:43: error: template argument 2 is invalid
+ 6780 |     : public __hash_base<size_t, u16string>
+      |                                           ^
+/usr/include/c++/9/bits/basic_string.h:6789:32: error: ‘u16string’ was not declared in this scope
+ 6789 |     struct __is_fast_hash<hash<u16string>> : std::false_type
+      |                                ^~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6789:32: note: ‘std::u16string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6789:32: error: template argument 1 is invalid
+/usr/include/c++/9/bits/basic_string.h:6789:41: error: template argument 1 is invalid
+ 6789 |     struct __is_fast_hash<hash<u16string>> : std::false_type
+      |                                         ^~
+/usr/include/c++/9/bits/basic_string.h:6794:17: error: ‘u32string’ was not declared in this scope
+ 6794 |     struct hash<u32string>
+      |                 ^~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6794:17: note: ‘std::u32string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6794:26: error: template argument 1 is invalid
+ 6794 |     struct hash<u32string>
+      |                          ^
+/usr/include/c++/9/bits/basic_string.h:6795:34: error: ‘u32string’ was not declared in this scope
+ 6795 |     : public __hash_base<size_t, u32string>
+      |                                  ^~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6795:34: note: ‘std::u32string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6795:43: error: template argument 2 is invalid
+ 6795 |     : public __hash_base<size_t, u32string>
+      |                                           ^
+/usr/include/c++/9/bits/basic_string.h:6804:32: error: ‘u32string’ was not declared in this scope
+ 6804 |     struct __is_fast_hash<hash<u32string>> : std::false_type
+      |                                ^~~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6804:32: note: ‘std::u32string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+/usr/include/c++/9/bits/basic_string.h:6804:32: error: template argument 1 is invalid
+/usr/include/c++/9/bits/basic_string.h:6804:41: error: template argument 1 is invalid
+ 6804 |     struct __is_fast_hash<hash<u32string>> : std::false_type
+      |                                         ^~
+/usr/include/c++/9/bits/basic_string.h:6818:29: error: wrong number of template arguments (1, should be 3)
+ 6818 |     inline basic_string<char>
+      |                             ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: In function ‘int std::literals::string_literals::operator""s(const char*, std::size_t)’:
+/usr/include/c++/9/bits/basic_string.h:6820:31: error: wrong number of template arguments (1, should be 3)
+ 6820 |     { return basic_string<char>{__str, __len}; }
+      |                               ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6824:32: error: wrong number of template arguments (1, should be 3)
+ 6824 |     inline basic_string<wchar_t>
+      |                                ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: In function ‘int std::literals::string_literals::operator""s(const wchar_t*, std::size_t)’:
+/usr/include/c++/9/bits/basic_string.h:6826:34: error: wrong number of template arguments (1, should be 3)
+ 6826 |     { return basic_string<wchar_t>{__str, __len}; }
+      |                                  ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6837:33: error: wrong number of template arguments (1, should be 3)
+ 6837 |     inline basic_string<char16_t>
+      |                                 ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: In function ‘int std::literals::string_literals::operator""s(const char16_t*, std::size_t)’:
+/usr/include/c++/9/bits/basic_string.h:6839:35: error: wrong number of template arguments (1, should be 3)
+ 6839 |     { return basic_string<char16_t>{__str, __len}; }
+      |                                   ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: At global scope:
+/usr/include/c++/9/bits/basic_string.h:6842:33: error: wrong number of template arguments (1, should be 3)
+ 6842 |     inline basic_string<char32_t>
+      |                                 ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h: In function ‘int std::literals::string_literals::operator""s(const char32_t*, std::size_t)’:
+/usr/include/c++/9/bits/basic_string.h:6844:35: error: wrong number of template arguments (1, should be 3)
+ 6844 |     { return basic_string<char32_t>{__str, __len}; }
+      |                                   ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc: At global scope:
+/usr/include/c++/9/bits/basic_string.tcc:1608:42: error: wrong number of template arguments (1, should be 3)
+ 1608 |   extern template class basic_string<char>;
+      |                                          ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1618:38: error: ‘string’ has not been declared
+ 1618 |     operator>>(basic_istream<char>&, string&);
+      |                                      ^~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1618:5: error: template-id ‘operator>><>’ for ‘std::basic_istream<char>& std::operator>>(std::basic_istream<char>&, int&)’ does not match any template declaration
+ 1618 |     operator>>(basic_istream<char>&, string&);
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note: candidate is: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 1466 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1621:44: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1621 |     operator<<(basic_ostream<char>&, const string&);
+      |                                            ^~~~~~
+      |                                            stdin
+/usr/include/c++/9/bits/basic_string.tcc:1621:5: error: template-id ‘operator<< <>’ for ‘std::basic_ostream<char>& std::operator<<(std::basic_ostream<char>&, const int&)’ does not match any template declaration
+ 1621 |     operator<<(basic_ostream<char>&, const string&);
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6416:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6416 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_string.h:48,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string_view:583:5: note:                 ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)’
+  583 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1624:35: error: ‘string’ has not been declared
+ 1624 |     getline(basic_istream<char>&, string&, char);
+      |                                   ^~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1624:5: error: template-id ‘getline<>’ for ‘std::basic_istream<char>& std::getline(std::basic_istream<char>&, int&, char)’ does not match any template declaration
+ 1624 |     getline(basic_istream<char>&, string&, char);
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6471:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6471 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6464:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6464 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6456:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6456 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1538:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 1538 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1627:35: error: ‘string’ has not been declared
+ 1627 |     getline(basic_istream<char>&, string&);
+      |                                   ^~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1627:5: error: template-id ‘getline<>’ for ‘std::basic_istream<char>& std::getline(std::basic_istream<char>&, int&)’ does not match any template declaration
+ 1627 |     getline(basic_istream<char>&, string&);
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6471:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6471 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6464:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6464 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6456:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6456 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1538:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 1538 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1631:45: error: wrong number of template arguments (1, should be 3)
+ 1631 |   extern template class basic_string<wchar_t>;
+      |                                             ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1639:41: error: ‘wstring’ has not been declared
+ 1639 |     operator>>(basic_istream<wchar_t>&, wstring&);
+      |                                         ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1639:5: error: template-id ‘operator>><>’ for ‘std::basic_istream<wchar_t>& std::operator>>(std::basic_istream<wchar_t>&, int&)’ does not match any template declaration
+ 1639 |     operator>>(basic_istream<wchar_t>&, wstring&);
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note: candidate is: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 1466 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1642:47: error: ‘wstring’ does not name a type
+ 1642 |     operator<<(basic_ostream<wchar_t>&, const wstring&);
+      |                                               ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1642:5: error: template-id ‘operator<< <>’ for ‘std::basic_ostream<wchar_t>& std::operator<<(std::basic_ostream<wchar_t>&, const int&)’ does not match any template declaration
+ 1642 |     operator<<(basic_ostream<wchar_t>&, const wstring&);
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6416:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6416 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_string.h:48,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string_view:583:5: note:                 ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)’
+  583 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1645:38: error: ‘wstring’ has not been declared
+ 1645 |     getline(basic_istream<wchar_t>&, wstring&, wchar_t);
+      |                                      ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1645:5: error: template-id ‘getline<>’ for ‘std::basic_istream<wchar_t>& std::getline(std::basic_istream<wchar_t>&, int&, wchar_t)’ does not match any template declaration
+ 1645 |     getline(basic_istream<wchar_t>&, wstring&, wchar_t);
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6471:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6471 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6464:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6464 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6456:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6456 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1538:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 1538 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1648:38: error: ‘wstring’ has not been declared
+ 1648 |     getline(basic_istream<wchar_t>&, wstring&);
+      |                                      ^~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1648:5: error: template-id ‘getline<>’ for ‘std::basic_istream<wchar_t>& std::getline(std::basic_istream<wchar_t>&, int&)’ does not match any template declaration
+ 1648 |     getline(basic_istream<wchar_t>&, wstring&);
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:6471:5: note: candidates are: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6471 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6464:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 6464 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6456:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6456 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.tcc:1538:5: note:                 ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 1538 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_classes.h:163:23: error: ‘string’ in namespace ‘std’ does not name a type
+  163 |     locale(const std::string& __s) : locale(__s.c_str()) { }
+      |                       ^~~~~~
+/usr/include/c++/9/bits/locale_classes.h:41:1: note: ‘std::string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+   40 | #include <string>
+  +++ |+#include <string>
+   41 | #include <ext/atomicity.h>
+/usr/include/c++/9/bits/locale_classes.h:177:45: error: ‘string’ in namespace ‘std’ does not name a type
+  177 |     locale(const locale& __base, const std::string& __s, category __cat)
+      |                                             ^~~~~~
+/usr/include/c++/9/bits/locale_classes.h:177:40: note: ‘std::string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+  177 |     locale(const locale& __base, const std::string& __s, category __cat)
+      |                                        ^~~
+/usr/include/c++/9/bits/locale_classes.h:244:5: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  244 |     string
+      |     ^~~~~~
+      |     stdin
+/usr/include/c++/9/bits/locale_classes.h: In constructor ‘std::locale::locale(const int&)’:
+/usr/include/c++/9/bits/locale_classes.h:163:49: error: request for member ‘c_str’ in ‘__s’, which is of non-class type ‘const int’
+  163 |     locale(const std::string& __s) : locale(__s.c_str()) { }
+      |                                                 ^~~~~
+/usr/include/c++/9/bits/locale_classes.h: In constructor ‘std::locale::locale(const std::locale&, const int&, std::locale::category)’:
+/usr/include/c++/9/bits/locale_classes.h:178:26: error: request for member ‘c_str’ in ‘__s’, which is of non-class type ‘const int’
+  178 |     : locale(__base, __s.c_str(), __cat) { }
+      |                          ^~~~~
+/usr/include/c++/9/bits/locale_classes.h: At global scope:
+/usr/include/c++/9/bits/locale_classes.h:649:34: error: wrong number of template arguments (1, should be 3)
+  649 |       typedef basic_string<_CharT> string_type;
+      |                                  ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_classes.h:822:34: error: wrong number of template arguments (1, should be 3)
+  822 |       typedef basic_string<_CharT> string_type;
+      |                                  ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_classes.h:839:28: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  839 |       collate_byname(const string& __s, size_t __refs = 0)
+      |                            ^~~~~~
+      |                            stdin
+/usr/include/c++/9/bits/locale_classes.h: In constructor ‘std::__cxx11::collate_byname<_CharT>::collate_byname(const int&, std::size_t)’:
+/usr/include/c++/9/bits/locale_classes.h:840:28: error: request for member ‘c_str’ in ‘__s’, which is of non-class type ‘const int’
+  840 |       : collate_byname(__s.c_str(), __refs) { }
+      |                            ^~~~~
+In file included from /usr/include/c++/9/bits/locale_classes.h:851,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_classes.tcc: In member function ‘virtual int std::__cxx11::collate<_CharT>::do_compare(const _CharT*, const _CharT*, const _CharT*, const _CharT*) const’:
+/usr/include/c++/9/bits/locale_classes.tcc:166:43: error: expression list treated as compound expression in initializer [-fpermissive]
+  166 |       const string_type __one(__lo1, __hi1);
+      |                                           ^
+/usr/include/c++/9/bits/locale_classes.tcc:167:43: error: expression list treated as compound expression in initializer [-fpermissive]
+  167 |       const string_type __two(__lo2, __hi2);
+      |                                           ^
+/usr/include/c++/9/bits/locale_classes.tcc:169:33: error: request for member ‘c_str’ in ‘__one’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  169 |       const _CharT* __p = __one.c_str();
+      |                                 ^~~~~
+/usr/include/c++/9/bits/locale_classes.tcc:170:36: error: request for member ‘data’ in ‘__one’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  170 |       const _CharT* __pend = __one.data() + __one.length();
+      |                                    ^~~~
+/usr/include/c++/9/bits/locale_classes.tcc:170:51: error: request for member ‘length’ in ‘__one’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  170 |       const _CharT* __pend = __one.data() + __one.length();
+      |                                                   ^~~~~~
+/usr/include/c++/9/bits/locale_classes.tcc:171:33: error: request for member ‘c_str’ in ‘__two’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  171 |       const _CharT* __q = __two.c_str();
+      |                                 ^~~~~
+/usr/include/c++/9/bits/locale_classes.tcc:172:36: error: request for member ‘data’ in ‘__two’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  172 |       const _CharT* __qend = __two.data() + __two.length();
+      |                                    ^~~~
+/usr/include/c++/9/bits/locale_classes.tcc:172:51: error: request for member ‘length’ in ‘__two’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  172 |       const _CharT* __qend = __two.data() + __two.length();
+      |                                                   ^~~~~~
+/usr/include/c++/9/bits/locale_classes.tcc: In member function ‘virtual std::__cxx11::collate<_CharT>::string_type std::__cxx11::collate<_CharT>::do_transform(const _CharT*, const _CharT*) const’:
+/usr/include/c++/9/bits/locale_classes.tcc:205:41: error: expression list treated as compound expression in initializer [-fpermissive]
+  205 |       const string_type __str(__lo, __hi);
+      |                                         ^
+/usr/include/c++/9/bits/locale_classes.tcc:207:33: error: request for member ‘c_str’ in ‘__str’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  207 |       const _CharT* __p = __str.c_str();
+      |                                 ^~~~~
+/usr/include/c++/9/bits/locale_classes.tcc:208:36: error: request for member ‘data’ in ‘__str’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  208 |       const _CharT* __pend = __str.data() + __str.length();
+      |                                    ^~~~
+/usr/include/c++/9/bits/locale_classes.tcc:208:51: error: request for member ‘length’ in ‘__str’, which is of non-class type ‘const string_type’ {aka ‘const int’}
+  208 |       const _CharT* __pend = __str.data() + __str.length();
+      |                                                   ^~~~~~
+/usr/include/c++/9/bits/locale_classes.tcc:233:14: error: request for member ‘append’ in ‘__ret’, which is of non-class type ‘std::__cxx11::collate<_CharT>::string_type’ {aka ‘int’}
+  233 |        __ret.append(__c, __res);
+      |              ^~~~~~
+/usr/include/c++/9/bits/locale_classes.tcc:239:14: error: request for member ‘push_back’ in ‘__ret’, which is of non-class type ‘std::__cxx11::collate<_CharT>::string_type’ {aka ‘int’}
+  239 |        __ret.push_back(_CharT());
+      |              ^~~~~~~~~
+In file included from /usr/include/c++/9/system_error:41,
+                 from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/stdexcept: At global scope:
+/usr/include/c++/9/stdexcept:56:29: error: ‘string’ in namespace ‘std’ does not name a type
+   56 |     __cow_string(const std::string&);
+      |                             ^~~~~~
+In file included from /usr/include/c++/9/system_error:41,
+                 from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/stdexcept:1:1: note: ‘std::string’ is defined in header ‘<string>’; did you forget to ‘#include <string>’?
+  +++ |+#include <string>
+    1 | // Standard exception classes  -*- C++ -*-
+In file included from /usr/include/c++/9/system_error:41,
+                 from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/stdexcept:67:28: error: wrong number of template arguments (1, should be 3)
+   67 |   typedef basic_string<char> __sso_string;
+      |                            ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/system_error:41,
+                 from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/stdexcept:120:23: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  120 |     logic_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                       ^~~~~~
+      |                       stdin
+/usr/include/c++/9/stdexcept:156:33: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  156 |     explicit domain_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                 ^~~~~~
+      |                                 stdin
+/usr/include/c++/9/stdexcept:171:37: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  171 |     explicit invalid_argument(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                     ^~~~~~
+      |                                     stdin
+/usr/include/c++/9/stdexcept:187:33: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  187 |     explicit length_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                 ^~~~~~
+      |                                 stdin
+/usr/include/c++/9/stdexcept:203:33: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  203 |     explicit out_of_range(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                 ^~~~~~
+      |                                 stdin
+/usr/include/c++/9/stdexcept:226:25: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  226 |     runtime_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                         ^~~~~~
+      |                         stdin
+/usr/include/c++/9/stdexcept:261:32: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  261 |     explicit range_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                ^~~~~~
+      |                                stdin
+/usr/include/c++/9/stdexcept:276:35: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  276 |     explicit overflow_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                   ^~~~~~
+      |                                   stdin
+/usr/include/c++/9/stdexcept:291:36: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  291 |     explicit underflow_error(const string& __arg) _GLIBCXX_TXN_SAFE;
+      |                                    ^~~~~~
+      |                                    stdin
+In file included from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/system_error:99:13: error: ‘string’ does not name a type; did you mean ‘stdin’?
+   99 |     virtual string
+      |             ^~~~~~
+      |             stdin
+/usr/include/c++/9/system_error:187:5: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  187 |     string
+      |     ^~~~~~
+      |     stdin
+/usr/include/c++/9/system_error:263:5: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  263 |     string
+      |     ^~~~~~
+      |     stdin
+/usr/include/c++/9/system_error:350:41: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  350 |     system_error(error_code __ec, const string& __what)
+      |                                         ^~~~~~
+      |                                         stdin
+/usr/include/c++/9/system_error:363:63: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  363 |     system_error(int __v, const error_category& __ecat, const string& __what)
+      |                                                               ^~~~~~
+      |                                                               stdin
+/usr/include/c++/9/system_error: In constructor ‘std::system_error::system_error(std::error_code)’:
+/usr/include/c++/9/system_error:348:26: error: ‘struct std::error_code’ has no member named ‘message’
+  348 |     : runtime_error(__ec.message()), _M_code(__ec) { }
+      |                          ^~~~~~~
+/usr/include/c++/9/system_error: In constructor ‘std::system_error::system_error(std::error_code, const int&)’:
+/usr/include/c++/9/system_error:351:42: error: ‘struct std::error_code’ has no member named ‘message’
+  351 |     : runtime_error(__what + ": " + __ec.message()), _M_code(__ec) { }
+      |                                          ^~~~~~~
+/usr/include/c++/9/system_error: In constructor ‘std::system_error::system_error(std::error_code, const char*)’:
+/usr/include/c++/9/system_error:354:43: error: ‘struct std::error_code’ has no member named ‘message’
+  354 |     : runtime_error(__what + (": " + __ec.message())), _M_code(__ec) { }
+      |                                           ^~~~~~~
+/usr/include/c++/9/system_error: In constructor ‘std::system_error::system_error(int, const std::_V2::error_category&)’:
+/usr/include/c++/9/system_error:360:45: error: ‘struct std::error_code’ has no member named ‘message’
+  360 |     : runtime_error(error_code(__v, __ecat).message()),
+      |                                             ^~~~~~~
+/usr/include/c++/9/system_error: In constructor ‘std::system_error::system_error(int, const std::_V2::error_category&, const int&)’:
+/usr/include/c++/9/system_error:364:61: error: ‘struct std::error_code’ has no member named ‘message’
+  364 |     : runtime_error(__what + ": " + error_code(__v, __ecat).message()),
+      |                                                             ^~~~~~~
+In file included from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/ios_base.h: At global scope:
+/usr/include/c++/9/bits/ios_base.h:259:21: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  259 |       failure(const string& __str);
+      |                     ^~~~~~
+      |                     stdin
+/usr/include/c++/9/bits/ios_base.h:263:21: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  263 |       failure(const string&, const error_code&);
+      |                     ^~~~~~
+      |                     stdin
+In file included from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.h:1488:26: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1488 |       ctype_byname(const string& __s, size_t __refs = 0)
+      |                          ^~~~~~
+      |                          stdin
+/usr/include/c++/9/bits/locale_facets.h: In constructor ‘std::ctype_byname<_CharT>::ctype_byname(const int&, std::size_t)’:
+/usr/include/c++/9/bits/locale_facets.h:1489:26: error: request for member ‘c_str’ in ‘__s’, which is of non-class type ‘const int’
+ 1489 |       : ctype_byname(__s.c_str(), __refs) { }
+      |                          ^~~~~
+/usr/include/c++/9/bits/locale_facets.h: At global scope:
+/usr/include/c++/9/bits/locale_facets.h:1507:26: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1507 |       ctype_byname(const string& __s, size_t __refs = 0);
+      |                          ^~~~~~
+      |                          stdin
+/usr/include/c++/9/bits/locale_facets.h:1525:26: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1525 |       ctype_byname(const string& __s, size_t __refs = 0);
+      |                          ^~~~~~
+      |                          stdin
+In file included from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.h:1677:34: error: wrong number of template arguments (1, should be 3)
+ 1677 |       typedef basic_string<_CharT> string_type;
+      |                                  ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.h:1779:7: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1779 |       string
+      |       ^~~~~~
+      |       stdin
+/usr/include/c++/9/bits/locale_facets.h:1847:15: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1847 |       virtual string
+      |               ^~~~~~
+      |               stdin
+/usr/include/c++/9/bits/locale_facets.h:1907:34: error: wrong number of template arguments (1, should be 3)
+ 1907 |       typedef basic_string<_CharT> string_type;
+      |                                  ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.h:1925:29: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ 1925 |       numpunct_byname(const string& __s, size_t __refs = 0)
+      |                             ^~~~~~
+      |                             stdin
+/usr/include/c++/9/bits/locale_facets.h: In constructor ‘std::__cxx11::numpunct_byname<_CharT>::numpunct_byname(const int&, std::size_t)’:
+/usr/include/c++/9/bits/locale_facets.h:1926:29: error: request for member ‘c_str’ in ‘__s’, which is of non-class type ‘const int’
+ 1926 |       : numpunct_byname(__s.c_str(), __refs) { }
+      |                             ^~~~~
+/usr/include/c++/9/bits/locale_facets.h: At global scope:
+/usr/include/c++/9/bits/locale_facets.h:2150:10: error: ‘string’ has not been declared
+ 2150 |          string&) const;
+      |          ^~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc: In member function ‘void std::__numpunct_cache<_CharT>::_M_cache(const std::locale&)’:
+/usr/include/c++/9/bits/locale_facets.tcc:87:10: error: ‘string’ does not name a type; did you mean ‘stdin’?
+   87 |    const string& __g = __np.grouping();
+      |          ^~~~~~
+      |          stdin
+/usr/include/c++/9/bits/locale_facets.tcc:88:23: error: ‘__g’ was not declared in this scope; did you mean ‘__lg’?
+   88 |    _M_grouping_size = __g.size();
+      |                       ^~~
+      |                       __lg
+/usr/include/c++/9/bits/locale_facets.tcc:96:29: error: wrong number of template arguments (1, should be 3)
+   96 |    const basic_string<_CharT>& __tn = __np.truename();
+      |                             ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:97:28: error: request for member ‘size’ in ‘__tn’, which is of non-class type ‘const int’
+   97 |    _M_truename_size = __tn.size();
+      |                            ^~~~
+/usr/include/c++/9/bits/locale_facets.tcc:99:9: error: request for member ‘copy’ in ‘__tn’, which is of non-class type ‘const int’
+   99 |    __tn.copy(__truename, _M_truename_size);
+      |         ^~~~
+/usr/include/c++/9/bits/locale_facets.tcc:101:29: error: wrong number of template arguments (1, should be 3)
+  101 |    const basic_string<_CharT>& __fn = __np.falsename();
+      |                             ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/basic_string.h:77:11: note: provided for ‘template<class _CharT, class _Traits, class _Alloc> class std::__cxx11::basic_string’
+   77 |     class basic_string
+      |           ^~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:102:29: error: request for member ‘size’ in ‘__fn’, which is of non-class type ‘const int’
+  102 |    _M_falsename_size = __fn.size();
+      |                             ^~~~
+/usr/include/c++/9/bits/locale_facets.tcc:104:9: error: request for member ‘copy’ in ‘__fn’, which is of non-class type ‘const int’
+  104 |    __fn.copy(__falsename, _M_falsename_size);
+      |         ^~~~
+/usr/include/c++/9/bits/locale_facets.tcc: At global scope:
+/usr/include/c++/9/bits/locale_facets.tcc:141:13: error: ‘string’ does not name a type; did you mean ‘stdin’?
+  141 |       const string& __grouping_tmp) throw ();
+      |             ^~~~~~
+      |             stdin
+/usr/include/c++/9/bits/locale_facets.tcc:150:34: error: ‘string’ has not been declared
+  150 |        ios_base::iostate& __err, string& __xtrc) const
+      |                                  ^~~~~~
+/usr/include/c++/9/bits/locale_facets.tcc: In member function ‘_InIter std::num_get<_CharT, _InIter>::_M_extract_float(_InIter, _InIter, std::ios_base&, std::ios_base::iostate&, int&) const’:
+/usr/include/c++/9/bits/locale_facets.tcc:209:7: error: ‘string’ was not declared in this scope; did you mean ‘std::pmr::string’?
+  209 |       string __found_grouping;
+      |       ^~~~~~
+      |       std::pmr::string
+In file included from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string:67:11: note: ‘std::pmr::string’ declared here
+   67 |     using string    = basic_string<char>;
+      |           ^~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:211:2: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  211 |  __found_grouping.reserve(32);
+      |  ^~~~~~~~~~~~~~~~
+      |  __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:275:4: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  275 |    __found_grouping += static_cast<char>(__sep_pos);
+      |    ^~~~~~~~~~~~~~~~
+      |    __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:282:11: error: request for member ‘clear’ in ‘__xtrc’, which is of non-class type ‘int’
+  282 |    __xtrc.clear();
+      |           ^~~~~
+/usr/include/c++/9/bits/locale_facets.tcc:296:11: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  296 |       if (__found_grouping.size())
+      |           ^~~~~~~~~~~~~~~~
+      |           __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:319:11: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  319 |       if (__found_grouping.size() && !__found_dec)
+      |           ^~~~~~~~~~~~~~~~
+      |           __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:355:11: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  355 |       if (__found_grouping.size())
+      |           ^~~~~~~~~~~~~~~~
+      |           __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc: In member function ‘_InIter std::num_get<_CharT, _InIter>::_M_extract_int(_InIter, _InIter, std::ios_base&, std::ios_base::iostate&, _ValueT&) const’:
+/usr/include/c++/9/bits/locale_facets.tcc:467:2: error: ‘string’ was not declared in this scope; did you mean ‘std::pmr::string’?
+  467 |  string __found_grouping;
+      |  ^~~~~~
+      |  std::pmr::string
+In file included from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string:67:11: note: ‘std::pmr::string’ declared here
+   67 |     using string    = basic_string<char>;
+      |           ^~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:469:4: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  469 |    __found_grouping.reserve(32);
+      |    ^~~~~~~~~~~~~~~~
+      |    __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:515:9: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  515 |         __found_grouping += static_cast<char>(__sep_pos);
+      |         ^~~~~~~~~~~~~~~~
+      |         __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:555:6: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  555 |  if (__found_grouping.size())
+      |      ^~~~~~~~~~~~~~~~
+      |      __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc:568:39: error: ‘__found_grouping’ was not declared in this scope; did you mean ‘__add_grouping’?
+  568 |  if ((!__sep_pos && !__found_zero && !__found_grouping.size())
+      |                                       ^~~~~~~~~~~~~~~~
+      |                                       __add_grouping
+/usr/include/c++/9/bits/locale_facets.tcc: In member function ‘virtual _InIter std::num_get<_CharT, _InIter>::do_get(std::num_get<_CharT, _InIter>::iter_type, std::num_get<_CharT, _InIter>::iter_type, std::ios_base&, std::ios_base::iostate&, float&) const’:
+/usr/include/c++/9/bits/locale_facets.tcc:694:7: error: ‘string’ was not declared in this scope; did you mean ‘std::pmr::string’?
+  694 |       string __xtrc;
+      |       ^~~~~~
+      |       std::pmr::string
+In file included from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string:67:11: note: ‘std::pmr::string’ declared here
+   67 |     using string    = basic_string<char>;
+      |           ^~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:695:7: error: ‘__xtrc’ was not declared in this scope
+  695 |       __xtrc.reserve(32);
+      |       ^~~~~~
+/usr/include/c++/9/bits/locale_facets.tcc: In member function ‘virtual _InIter std::num_get<_CharT, _InIter>::do_get(std::num_get<_CharT, _InIter>::iter_type, std::num_get<_CharT, _InIter>::iter_type, std::ios_base&, std::ios_base::iostate&, double&) const’:
+/usr/include/c++/9/bits/locale_facets.tcc:709:7: error: ‘string’ was not declared in this scope; did you mean ‘std::pmr::string’?
+  709 |       string __xtrc;
+      |       ^~~~~~
+      |       std::pmr::string
+In file included from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string:67:11: note: ‘std::pmr::string’ declared here
+   67 |     using string    = basic_string<char>;
+      |           ^~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:710:7: error: ‘__xtrc’ was not declared in this scope
+  710 |       __xtrc.reserve(32);
+      |       ^~~~~~
+/usr/include/c++/9/bits/locale_facets.tcc: In member function ‘virtual _InIter std::num_get<_CharT, _InIter>::do_get(std::num_get<_CharT, _InIter>::iter_type, std::num_get<_CharT, _InIter>::iter_type, std::ios_base&, std::ios_base::iostate&, long double&) const’:
+/usr/include/c++/9/bits/locale_facets.tcc:741:7: error: ‘string’ was not declared in this scope; did you mean ‘std::pmr::string’?
+  741 |       string __xtrc;
+      |       ^~~~~~
+      |       std::pmr::string
+In file included from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/string:67:11: note: ‘std::pmr::string’ declared here
+   67 |     using string    = basic_string<char>;
+      |           ^~~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:2655,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Tree.cpp:6:
+/usr/include/c++/9/bits/locale_facets.tcc:742:7: error: ‘__xtrc’ was not declared in this scope
+  742 |       __xtrc.reserve(32);
+      |       ^~~~~~
+Tree.cpp: In function ‘void delete_node(int, BT*, BT**)’:
+Tree.cpp:420:45: error: ‘i’ was not declared in this scope
+  420 |         replace_node=target_node->childlist[i+1];
+      |                                             ^
+Tree.cpp:451:5: error: ‘handle_short’ was not declared in this scope
+  451 |     handle_short(b,t);
+      |     ^~~~~~~~~~~~
+Tree.cpp: In function ‘void handle_short(BT*, BT**)’:
+Tree.cpp:486:9: error: ‘borrow’ was not declared in this scope
+  486 |         borrow(left_neighbor,b,t);
+      |         ^~~~~~
+Tree.cpp:492:9: error: ‘borrow’ was not declared in this scope
+  492 |         borrow(right_neighbor,b,t);
+      |         ^~~~~~
+Tree.cpp:500:13: error: ‘merge’ was not declared in this scope
+  500 |             merge(b,right_neighbor,t);
+      |             ^~~~~
+Tree.cpp:506:13: error: ‘merge’ was not declared in this scope
+  506 |             merge(left_neighbor,b,t);
+      |             ^~~~~
+Tree.cpp: In function ‘void borrow(BT*, BT*, BT**)’:
+Tree.cpp:547:23: error: ‘class std::vector<int>’ has no member named ‘pop_front’
+  547 |         from->keylist.pop_front();
+      |                       ^~~~~~~~~
+Tree.cpp: In function ‘void merge(BT*, BT*, BT**)’:
+Tree.cpp:565:77: error: expected ‘;’ before ‘for’
+  565 |         left->keylist.push_back(right->parent->keylist[right->PCrelation-1])
+      |                                                                             ^
+      |                                                                             ;
+  566 | 
+  567 |         for(i=0;i<right->keylist.size();i++){
+      |         ~~~                                                                  
+Tree.cpp:567:44: error: expected ‘;’ before ‘)’ token
+  567 |         for(i=0;i<right->keylist.size();i++){
+      |                                            ^
+      |                                            ;
+make: *** [Makefile:2: Tree.o] Error 1

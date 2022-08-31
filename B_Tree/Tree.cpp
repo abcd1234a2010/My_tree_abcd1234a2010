@@ -378,6 +378,7 @@ void delete_node(int data,BT *b,BT **t){
     int swap_value;
     int target_i;
     int replace_i;
+    int i;
 
     while(true){
 
@@ -441,5 +442,159 @@ void delete_node(int data,BT *b,BT **t){
     }
 
     replace_node->keylist.erase(replace_node->keylist.begin()+replace_i);
+
+    if(b->keylist.size()>=b->degree-1){
+
+        return;
+
+    }
+
+    handle_short(b,t);
+
+}
+
+void handle_short(BT *b,BT **t){
+
+    BT* right_neighbor;
+    BT* left_neighbor;
+
+    if(b->PCrelation+1>b->parent->childlist.size()-1){
+
+        right_neighbor=NULL;
+
+    }
+
+    else{
+
+        right_neighbor=b->parent->childlist[b->PCrelation+1];
+
+    }
+
+    if(b->PCrelation-1<0){
+
+        left_neighbor=NULL;
+
+    }
+
+    else{
+
+        left_neighbor=b->parent->childlist[b->PCrelation-1];
+
+    }
+
+    if(left_neighbor->keylist.size()-1>b->degree-1){
+
+        borrow(left_neighbor,b,t);
+
+    }
+
+    else if(right_neighbor->keylist.size()-1>b->degree-1){
+
+        borrow(right_neighbor,b,t);
+
+    }
+
+    else{
+
+        if(left_neighbor==NULL){
+
+            merge(b,right_neighbor,t);
+
+        }
+
+        else{
+
+            merge(left_neighbor,b,t);
+
+        }
+
+        if(b->parent->isroot==1){
+
+            if(b->parent->keylist.size()==0){
+
+                b->isroot=1;
+                delete b->parent;
+                b->parent=NULL;
+                *t=b;
+
+            }
+
+        }
+
+        else if(b->parent->keylist.size()<b->degree-1){
+
+            handle_short(b->parent,t);
+
+        }
+
+    }
+
+}
+
+void borrow(BT* from,BT* to,BT** t){
+
+    if(from->PCrelation==to->PCrelation-1){
+
+        to->keylist.insert(to->keylist.begin(),to->parent->keylist[to->PCrelation-1]);
+        to->parent->keylist[to->PCrelation-1]=from->keylist.back();
+        from->keylist.pop_back();
+
+    }
+
+    else if(from->PCrelation==to->PCrelation+1){
+
+        to->keylist.push_back(to->parent->keylist[to->PCrelation+1]);
+        to->parent->keylist[to->PCrelation+1]=from->keylist[0];
+        from->keylist.erase(from->keylist.begin());
+
+    }
+
+    else{
+
+        printf("borrow error\n");
+
+    }
+
+}
+
+void merge(BT* left,BT* right,BT** t){
+
+    int i;
+
+    if(left->PCrelation==right->PCrelation-1){
+
+        left->keylist.push_back(right->parent->keylist[right->PCrelation-1]);
+        
+        for(i=0;i<right->keylist.size();i++){
+
+            left->keylist.push_back(right->keylist[i]);
+
+        }
+
+        for(i=0;i<right->childlist.size();i++){
+
+            left->childlist.push_back(right->childlist[i]);
+            left->childlist.back()->PCrelation=left->childlist.size()-1;
+
+        }
+
+        right->parent->keylist.erase(right->parent->keylist.begin()+right->PCrelation-1);
+        right->parent->childlist.erase(right->parent->childlist.begin()+right->PCrelation);
+        
+        for(i=0;i<left->parent->childlist.size();i++){
+
+            left->parent->childlist[i]->PCrelation=i;
+
+        }
+
+        delete right;
+
+    }
+
+    else{
+
+        printf("merge error\n");
+
+    }
 
 }
