@@ -370,3 +370,76 @@ void check_valid_2(BT *now_node, bool need_root, bool need_leaf){
     }
 
 }
+
+void delete_node(int data,BT *b,BT **t){
+
+    BT* target_node=b;
+    BT* replace_node;
+    int swap_value;
+    int target_i;
+    int replace_i;
+
+    while(true){
+
+        bool found=false;
+
+        for(target_i=0;target_i<target_node->keylist.size();target_i++){
+
+            if(data<target_node->keylist[target_i]){
+
+                break;
+            }
+
+            else if(data==target_node->keylist[target_i]){
+
+                found=true;
+                break;
+
+            }
+        
+        }
+
+        if(found){
+
+            break;
+
+        }
+
+        if(target_node->isleaf==1){
+
+            return;
+
+        }
+
+        target_node=target_node->childlist[target_i];
+
+    }
+
+    if(target_node->isleaf!=1){
+        
+        replace_node=target_node->childlist[i+1];
+
+        while(replace_node->isleaf!=1){
+
+            replace_node=replace_node->childlist[0];
+
+        }
+
+        replace_i=0;
+
+        swap_value=replace_node->keylist[replace_i];
+        replace_node->keylist[replace_i]=target_node->keylist[target_i];
+        target_node->keylist[target_i]=swap_value;
+
+    }
+
+    else{
+
+        replace_node=target_node;
+        replace_i=target_i;
+
+    }
+
+    replace_node->keylist.erase(replace_node->keylist.begin()+replace_i);
+
+}
